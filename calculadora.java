@@ -1,33 +1,46 @@
+import java.util.Scanner;
+
 public class Calculadora {
-    public static void main(String[] args) {
-        System.out.println("=== Calculadora Mejorada ===");
-        int a = 10;
-        int b = 5;
-        
-        // Operaciones básicas
-        System.out.println("Suma: " + (a + b));
-        System.out.println("Resta: " + (a - b));
-        System.out.println("Multiplicación: " + (a * b));
-        System.out.println("División: " + (a / b));
-        
-        // Potencias añadidas como ordenó
-        System.out.println("Potencia " + a + "^" + b + ": " + potencia(a, b));
-        System.out.println("Cuadrado de " + a + ": " + cuadrado(a));
-        System.out.println("Cubo de " + b + ": " + cubo(b));
-    }
-    
-    // Método para calcular cualquier potencia
-    public static double potencia(int base, int exponente) {
-        return Math.pow(base, exponente);
-    }
-    
-    // Método específico para cuadrado
-    public static int cuadrado(int numero) {
-        return numero * numero;
-    }
-    
-    // Método específico para cubo
-    public static int cubo(int numero) {
-        return numero * numero * numero;
-    }
+
+	public static void main(String[] args) {
+		Scanner scan_l = new Scanner(System.in);
+		Scanner scan_n = new Scanner(System.in);
+		String operacion;
+		int numero1, numero2;
+		double resultado;
+
+		System.out.println("Operaciones disponibles:");
+		System.out.println("suma \"+\"");
+		System.out.println("resta \"-\"");
+		System.out.println("multiplicar \"*\"");
+		System.out.println("suma \"/\"");
+		System.out.println("salir \"exit\"");
+
+		System.out.println("Que operacion quieres?");
+		operacion = scan_l.nextLine();
+
+		if (!operacion.equals("Exit")) {
+			System.out.println("Que numeros quieres?");
+			numero1 = scan_n.nextInt();
+			numero2 = scan_l.nextInt();
+
+			if (operacion.equals("+")) {
+				resultado = numero1 + numero2;
+				System.out.println("El resultado de la suma es: " + resultado);
+			} else if (operacion.equals("-")) {
+				resultado = numero1 - numero2;
+				System.out.println("El resultado de la resta es: " + resultado);
+			} else if (operacion.equals("*")) {
+				resultado = numero1 * numero2;
+				System.out.println("El resultado de la multiplicacion es: " + resultado);
+			} else if (operacion.equals("/")) {
+				resultado = numero1 / numero2;
+				System.out.println("El resultado de la division es: " + resultado);
+			}
+		} else {
+			System.out.println("Saliendo...");
+		}
+
+	}
+
 }
