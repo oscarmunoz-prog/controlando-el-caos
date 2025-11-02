@@ -1,4 +1,5 @@
-public class Calculadora {
+
+public class calculadora {
     public static void main(String[] args) {
         System.out.println("=== Calculadora Mejorada ===");
         int a = 10;
@@ -31,3 +32,4 @@ public class Calculadora {
         return numero * numero * numero;
     }
 }
+
