@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calculadora {
+public class calculadora {
     public static void main(String[] args) {
         Scanner scan_l = new Scanner(System.in);
         Scanner scan_n = new Scanner(System.in);
@@ -13,7 +13,7 @@ public class Calculadora {
             System.out.println("Operaciones disponibles: ");
             System.out.println("suma \"+\"");
             System.out.println("resta \"-\"");
-            System.out.println("hola \"*\"");
+            System.out.println("multiplicar \"*\"");
             System.out.println("dividir \"/\"");
             System.out.println("potencia \"^\"");
             System.out.println("salir \"exit\"");
