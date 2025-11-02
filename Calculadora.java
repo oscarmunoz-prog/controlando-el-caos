@@ -13,7 +13,7 @@ public class Calculadora {
             System.out.println("Operaciones disponibles: ");
             System.out.println("suma \"+\"");
             System.out.println("resta \"-\"");
-            System.out.println("multiplicar \"*\"");
+            System.out.println("hola \"*\"");
             System.out.println("dividir \"/\"");
             System.out.println("potencia \"^\"");
             System.out.println("salir \"exit\"");
