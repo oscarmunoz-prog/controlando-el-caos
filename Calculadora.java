@@ -86,6 +86,7 @@ public class Calculadora {
             System.out.println("¿Quieres continuar? (s/n)");
             continuar = scan_l.nextLine();
         }
+        "hola"
 
         scan_l.close();
         scan_n.close();
