@@ -16,15 +16,16 @@ public class Calculadora {
             System.out.println("multiplicar \"*\"");
             System.out.println("dividir \"/\"");
             System.out.println("potencia \"^\"");
+            System.out.println("porcentaje \"%\"");
             System.out.println("salir \"exit\"");
 
             System.out.println("Que operacion quieres?");
             operacion = scan_l.nextLine();
 
-            if (!operacion.equals("Exit")) {
+            if (!operacion.equals("exit")) {
                 System.out.println("Que numeros quieres?");
                 numero1 = scan_n.nextInt();
-                numero2 = scan_l.nextInt();
+                numero2 = scan_n.nextInt();
 
                 if (operacion.equals("+")) {
                     resultado = numero1 + numero2;
@@ -45,8 +46,11 @@ public class Calculadora {
                 } else if (operacion.equals("^")) {
                     resultado = Math.pow(numero1, numero2);
                     System.out.println("El resultado de la potencia es: " + resultado);
+                } else if (operacion.equals("%")) {
+                    // CÁLCULO DE PORCENTAJE: numero1 % de numero2
+                    resultado = (double) numero1 * numero2 / 100;
+                    System.out.println(numero1 + "% de " + numero2 + " = " + resultado);
                 }
-
             }
 
             System.out.println("¿Quieres continuar? (s/n)");
