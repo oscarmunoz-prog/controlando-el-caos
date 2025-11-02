@@ -10,7 +10,7 @@ public class calculadora {
 	        System.out.println("Resta: " + (a - b));
 	        System.out.println("Multiplicación: " + (a * b));
 	        System.out.println("División: " + (a / b));
-			"Hola 1"
+			"Hola 2"
 	    }
 	}
 
