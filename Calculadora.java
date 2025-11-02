@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class calculadora {
+public class Calculadora {
     public static void main(String[] args) {
         Scanner scan_l = new Scanner(System.in);
         Scanner scan_n = new Scanner(System.in);
@@ -52,6 +52,7 @@ public class calculadora {
             System.out.println("¿Quieres continuar? (s/n)");
             continuar = scan_l.nextLine();
         }
+        "hola"
 
         scan_l.close();
         scan_n.close();
